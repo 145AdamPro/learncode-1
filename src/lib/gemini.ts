@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const genAI = new GoogleGenerativeAI('AIzaSyCYlQZUyF_6_HYb7aOpgjITNh7fwfXviMQ');
+const genAI = new GoogleGenerativeAI('your api');
 
 export async function getExplanation(topic: string, concept: string) {
   const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
